@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factorial Program</title>
+</head>
+<body>
+
+<h2>Factorial of a Number</h2>
+
+Enter a Number:
+<input type="number" id="num"><br><br>
+
+<button onclick="factorial()">Find Factorial</button>
+
+<p id="result"></p>
+
+<script>
+function factorial() {
+
+    var num = Number(document.getElementById("num").value);
+    var fact = 1;
+
+    if (num < 0) {
+        document.getElementById("result").innerHTML =
+            "Factorial does not exist for negative numbers.";
+    }
+    else {
+        for (var i = 1; i <= num; i++) {
+            fact = fact * i;
+        }
+
+        document.getElementById("result").innerHTML =
+            "Factorial of " + num + " is " + fact;
+    }
+}
+</script>
+
+</body>
+</html>

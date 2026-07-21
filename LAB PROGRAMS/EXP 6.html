@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiples of 7</title>
+</head>
+<body>
+
+<h2>Multiples of 7</h2>
+
+Enter a Number:
+<input type="number" id="num"><br><br>
+
+<button onclick="showMultiples()">Display</button>
+
+<p id="result"></p>
+
+<script>
+function showMultiples() {
+
+    var num = Number(document.getElementById("num").value);
+    var result = "";
+
+    for (var i = 1; i <= num; i++) {
+        result = result + (7 * i) + " ";
+    }
+
+    document.getElementById("result").innerHTML =
+        "Multiples of 7: " + result;
+}
+</script>
+
+</body>
+</html>

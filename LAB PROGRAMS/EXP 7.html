@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Greater than 1000 & Divisible by 99</title>
+</head>
+<body>
+
+<h2>First Number Greater than 1000 Divisible by 99</h2>
+
+<button onclick="findNumber()">Find</button>
+
+<p id="result"></p>
+
+<script>
+function findNumber() {
+
+    var num;
+
+    for (num = 1001; ; num++) {
+        if (num % 99 == 0) {
+            break;
+        }
+    }
+
+    document.getElementById("result").innerHTML =
+        "Number is: " + num;
+}
+</script>
+
+</body>
+</html>
