@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Form Validation</title>
+
+<style>
+
+body{
+font-family:Arial;
+padding:30px;
+}
+
+input{
+padding:10px;
+width:250px;
+margin-bottom:10px;
+}
+
+span{
+color:red;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Registration Form</h2>
+
+Email
+
+<br>
+
+<input type="email" id="email" onkeyup="validateEmail()">
+
+<br>
+
+<span id="emailError"></span>
+
+<br><br>
+
+Phone
+
+<br>
+
+<input type="text" id="phone" maxlength="10" onkeyup="validatePhone()">
+
+<br>
+
+<span id="phoneError"></span>
+
+<script>
+
+function validateEmail(){
+
+let email=document.getElementById("email").value;
+
+let pattern=/^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+if(pattern.test(email))
+document.getElementById("emailError").innerHTML="";
+
+else
+document.getElementById("emailError").innerHTML="Invalid Email";
+
+}
+
+function validatePhone(){
+
+let phone=document.getElementById("phone").value;
+
+let pattern=/^[0-9]{10}$/;
+
+if(pattern.test(phone))
+document.getElementById("phoneError").innerHTML="";
+
+else
+document.getElementById("phoneError").innerHTML="Invalid Phone Number";
+
+}
+
+</script>
+
+</body>
+
+</html>
