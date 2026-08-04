@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+
+body{
+
+font-family:Arial;
+
+}
+
+button{
+
+padding:12px 20px;
+
+font-size:18px;
+
+margin:20px;
+
+}
+
+#menu{
+
+display:none;
+
+background:#333;
+
+width:200px;
+
+}
+
+#menu a{
+
+display:block;
+
+color:white;
+
+padding:12px;
+
+text-decoration:none;
+
+}
+
+#menu a:hover{
+
+background:#555;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<button onclick="toggleMenu()">? Menu</button>
+
+<div id="menu">
+
+<a href="#">Home</a>
+
+<a href="#">Products</a>
+
+<a href="#">Services</a>
+
+<a href="#">Contact</a>
+
+</div>
+
+<script>
+
+function toggleMenu(){
+
+let menu=document.getElementById("menu");
+
+if(menu.style.display=="block")
+
+menu.style.display="none";
+
+else
+
+menu.style.display="block";
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navigation</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f4f4f4;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#222;
+padding:15px 25px;
+}
+
+.logo{
+color:white;
+font-size:24px;
+font-weight:bold;
+}
+
+.menu{
+display:flex;
+list-style:none;
+}
+
+.menu li{
+margin-left:20px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+}
+
+.menu a:hover{
+color:orange;
+}
+
+.menu-icon{
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+}
+
+@media(max-width:768px){
+
+.menu{
+display:none;
+flex-direction:column;
+background:#333;
+position:absolute;
+top:60px;
+right:0;
+width:200px;
+}
+
+.menu.show{
+display:flex;
+}
+
+.menu li{
+padding:15px;
+border-bottom:1px solid gray;
+}
+
+.menu-icon{
+display:block;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">ShopEasy</div>
+
+<ul class="menu" id="menu">
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#">Products</a></li>
+
+<li><a href="#">Cart</a></li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+<div class="menu-icon" onclick="toggleMenu()">?</div>
+
+</nav>
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("show");
+
+}
+
+</script>
+
+</body>
+</html>
