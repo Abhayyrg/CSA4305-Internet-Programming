@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bus Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav>
+        <h2>?? BusBooking</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="booking.html">Book Ticket</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Login Form -->
+<form onsubmit="return validateLogin()">
+
+    <h2>User Login</h2>
+
+    <input
+        type="text"
+        id="username"
+        placeholder="Enter Username"
+        required
+    >
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Enter Password"
+        required
+    >
+
+    <button type="submit">
+        Login
+    </button>
+
+    <br><br>
+
+    <p style="text-align:center;">
+        Don't have an account?
+        <a href="register.html">Register</a>
+    </p>
+
+</form>
+
+<script>
+
+function validateLogin(){
+
+    let user=document.getElementById("username").value;
+    let pass=document.getElementById("password").value;
+
+    if(user=="admin" && pass=="1234"){
+
+        alert("Login Successful!");
+
+        window.location="index.html";
+
+    }
+
+    else{
+
+        alert("Invalid Username or Password");
+
+    }
+
+    return false;
+
+}
+
+</script>
+
+</body>
+</html>

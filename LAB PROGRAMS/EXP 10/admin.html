@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+
+<header>
+
+<nav>
+
+<h2>?? BusBooking</h2>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="booking.html">Book Ticket</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="report.html">Reports</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- Admin Panel -->
+
+<form onsubmit="return adminAction()">
+
+<h2>Admin Dashboard</h2>
+
+<label>Bus Category</label>
+
+<select id="category">
+
+<option>Volvo AC</option>
+<option>Sleeper Coach</option>
+<option>Luxury Express</option>
+
+</select>
+
+<label>Bus Name</label>
+
+<input
+type="text"
+id="busname"
+placeholder="Enter Bus Name"
+required>
+
+<label>Route</label>
+
+<input
+type="text"
+id="route"
+placeholder="Example: Hyderabad - Bangalore"
+required>
+
+<label>Available Seats</label>
+
+<input
+type="number"
+id="seats"
+placeholder="Available Seats"
+required>
+
+<label>Description</label>
+
+<textarea
+id="description"
+rows="4"
+placeholder="Bus Description">
+</textarea>
+
+<button type="submit">
+
+Add / Update Bus
+
+</button>
+
+<br><br>
+
+<button
+type="button"
+onclick="deleteBus()"
+style="background:red;">
+
+Delete Bus
+
+</button>
+
+</form>
+
+<!-- Quick Admin Options -->
+
+<div class="search-box">
+
+<h2>Admin Options</h2>
+
+<p>? Manage Registered Users</p>
+
+<p>? Manage Bus Categories</p>
+
+<p>? Manage Comments</p>
+
+<p>? Generate Reports</p>
+
+<p>? Update Bus Information</p>
+
+</div>
+
+<script>
+
+function adminAction(){
+
+alert("Bus Information Saved Successfully!");
+
+return false;
+
+}
+
+function deleteBus(){
+
+alert("Bus Deleted Successfully!");
+
+}
+
+</script>
+
+<footer>
+
+<p>
+
+© 2026 Online Bus Ticket Booking System
+
+</p>
+
+</footer>
+
+</body>
+</html>

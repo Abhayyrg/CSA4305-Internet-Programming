@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ticket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<header>
+
+<nav>
+
+<h2>?? BusBooking</h2>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="booking.html">Book Ticket</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="admin.html">Admin</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- Booking Form -->
+
+<form onsubmit="return bookTicket()">
+
+<h2>Bus Ticket Booking</h2>
+
+<label>Select Bus</label>
+
+<select id="bus">
+
+<option>Volvo AC</option>
+<option>Sleeper Coach</option>
+<option>Luxury Express</option>
+
+</select>
+
+<label>From</label>
+
+<input
+type="text"
+id="from"
+placeholder="Departure City"
+required>
+
+<label>To</label>
+
+<input
+type="text"
+id="to"
+placeholder="Destination City"
+required>
+
+<label>Journey Date</label>
+
+<input
+type="date"
+id="date"
+required>
+
+<label>Passenger Name</label>
+
+<input
+type="text"
+id="name"
+placeholder="Passenger Name"
+required>
+
+<label>Age</label>
+
+<input
+type="number"
+id="age"
+min="1"
+max="100"
+required>
+
+<label>Seat Number</label>
+
+<select id="seat">
+
+<option>A1</option>
+<option>A2</option>
+<option>A3</option>
+<option>B1</option>
+<option>B2</option>
+<option>B3</option>
+
+</select>
+
+<label>Payment Method</label>
+
+<select id="payment">
+
+<option>UPI</option>
+<option>Credit Card</option>
+<option>Debit Card</option>
+<option>Cash</option>
+
+</select>
+
+<button type="submit">
+
+Book Ticket
+
+</button>
+
+<br><br>
+
+<button
+type="reset"
+style="background:red;">
+
+Cancel
+
+</button>
+
+</form>
+
+<script>
+
+function bookTicket(){
+
+let name=document.getElementById("name").value;
+
+let bus=document.getElementById("bus").value;
+
+let seat=document.getElementById("seat").value;
+
+alert(
+
+"Booking Successful!\n\n"+
+
+"Passenger : "+name+
+
+"\nBus : "+bus+
+
+"\nSeat : "+seat
+
+);
+
+return false;
+
+}
+
+</script>
+
+<footer>
+
+<p>
+
+© 2026 Online Bus Ticket Booking System
+
+</p>
+
+</footer>
+
+</body>
+</html>

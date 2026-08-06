@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Bus Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav>
+        <h2>?? BusBooking</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="booking.html">Book Ticket</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Registration Form -->
+<form onsubmit="return validateRegister()">
+
+    <h2>User Registration</h2>
+
+    <input
+        type="text"
+        id="name"
+        placeholder="Full Name"
+        required
+    >
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Email Address"
+        required
+    >
+
+    <input
+        type="text"
+        id="phone"
+        placeholder="Phone Number"
+        maxlength="10"
+        required
+    >
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        required
+    >
+
+    <input
+        type="password"
+        id="confirm"
+        placeholder="Confirm Password"
+        required
+    >
+
+    <button type="submit">
+        Register
+    </button>
+
+    <br><br>
+
+    <p style="text-align:center;">
+        Already have an account?
+        <a href="login.html">Login</a>
+    </p>
+
+</form>
+
+<script>
+
+function validateRegister(){
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let password = document.getElementById("password").value;
+    let confirm = document.getElementById("confirm").value;
+
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let phonePattern = /^[0-9]{10}$/;
+
+    if(!emailPattern.test(email)){
+        alert("Please enter a valid Email Address");
+        return false;
+    }
+
+    if(!phonePattern.test(phone)){
+        alert("Phone number must contain exactly 10 digits");
+        return false;
+    }
+
+    if(password != confirm){
+        alert("Passwords do not match");
+        return false;
+    }
+
+    alert("Registration Successful!");
+
+    window.location = "login.html";
+
+    return false;
+}
+
+</script>
+
+</body>
+</html>
