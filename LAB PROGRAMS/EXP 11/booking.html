@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Ticket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>?? Book Train Ticket</h2>
+
+        <h3>Passenger Details</h3>
+
+        <input type="text"
+               id="passenger"
+               placeholder="Passenger Name">
+
+        <input type="number"
+               id="age"
+               placeholder="Age">
+
+        <select id="gender">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <h3>Journey Details</h3>
+
+        <input type="text"
+               id="source"
+               placeholder="Origin Station">
+
+        <input type="text"
+               id="destination"
+               placeholder="Destination Station">
+
+        <select id="travelClass">
+            <option>Sleeper</option>
+            <option>AC 3 Tier</option>
+            <option>AC 2 Tier</option>
+            <option>AC First Class</option>
+        </select>
+
+        <h3>Payment</h3>
+
+        <select id="payment">
+            <option>UPI</option>
+            <option>Debit Card</option>
+            <option>Credit Card</option>
+            <option>Cash</option>
+        </select>
+
+        <button onclick="bookTicket()">
+            Pay & Book
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

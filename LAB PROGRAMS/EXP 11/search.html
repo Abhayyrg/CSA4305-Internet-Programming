@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Trains</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>?? Railway Reservation</h2>
+
+    <nav>
+        <a href="search.html">Search</a>
+        <a href="pnr.html">PNR Status</a>
+        <a href="cancel.html">Cancel</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Search Trains</h2>
+
+        <input type="text" id="from"
+               placeholder="From Station">
+
+        <input type="text" id="to"
+               placeholder="To Station">
+
+        <input type="date" id="date">
+
+        <select id="classType">
+            <option>AC First Class</option>
+            <option>AC 2 Tier</option>
+            <option>AC 3 Tier</option>
+            <option>Sleeper</option>
+        </select>
+
+        <button onclick="searchTrain()">
+            Search Trains
+        </button>
+
+    </div>
+
+    <div id="results"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
