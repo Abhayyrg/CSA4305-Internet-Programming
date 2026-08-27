@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8fb;
+    color: #263238;
+}
+
+header {
+    background: #087f8c;
+    color: white;
+
+    padding: 18px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.hero {
+    background:
+        linear-gradient(
+            rgba(8,127,140,.85),
+            rgba(8,127,140,.85)
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 25px;
+}
+
+.card,
+.form-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.08);
+
+    text-align: center;
+}
+
+.form-card {
+    max-width: 500px;
+    margin: auto;
+}
+
+.icon,
+.doctor-icon {
+    font-size: 60px;
+
+    background: #e8f7f8;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    margin-bottom: 15px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 8px 0;
+
+    border: 1px solid #ccd6da;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+button {
+    background: #087f8c;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #05616b;
+}
+
+.doctor {
+    transition: .3s;
+}
+
+.doctor:hover {
+    transform: translateY(-6px);
+}
+
+.appointment {
+    background: #e8f7f8;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    margin-top: 20px;
+}
+
+.confirmed {
+    color: green;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        width: 94%;
+    }
+}

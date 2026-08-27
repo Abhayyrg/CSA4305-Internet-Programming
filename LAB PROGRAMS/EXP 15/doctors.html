@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Find Doctors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h2>?? MedCare</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="hospitals.html">Hospitals</a>
+        <a href="appointments.html">My Appointments</a>
+    </nav>
+
+</header>
+
+<div class="container">
+
+    <h1>Find a Doctor</h1>
+
+    <input type="text"
+           id="doctorSearch"
+           placeholder="Search doctor or specialty..."
+           onkeyup="searchDoctor()">
+
+    <div class="grid">
+
+        <div class="card doctor">
+
+            <div class="doctor-icon">
+                ?????
+            </div>
+
+            <h2>Dr. Arun Kumar</h2>
+
+            <p>Cardiologist</p>
+
+            <p>?? Chennai</p>
+
+            <p>? 4.8</p>
+
+            <button onclick="selectDoctor('Dr. Arun Kumar')">
+                Book Appointment
+            </button>
+
+        </div>
+
+
+        <div class="card doctor">
+
+            <div class="doctor-icon">
+                ?????
+            </div>
+
+            <h2>Dr. Priya Sharma</h2>
+
+            <p>Dermatologist</p>
+
+            <p>?? Chennai</p>
+
+            <p>? 4.7</p>
+
+            <button onclick="selectDoctor('Dr. Priya Sharma')">
+                Book Appointment
+            </button>
+
+        </div>
+
+
+        <div class="card doctor">
+
+            <div class="doctor-icon">
+                ?????
+            </div>
+
+            <h2>Dr. Rahul Mehta</h2>
+
+            <p>Neurologist</p>
+
+            <p>?? Bangalore</p>
+
+            <p>? 4.9</p>
+
+            <button onclick="selectDoctor('Dr. Rahul Mehta')">
+                Book Appointment
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

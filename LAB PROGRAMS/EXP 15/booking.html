@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="form-card">
+
+        <h2>?? Book Appointment</h2>
+
+        <label>Doctor</label>
+
+        <input type="text"
+               id="doctor"
+               readonly>
+
+        <label>Hospital</label>
+
+        <select id="hospital">
+
+            <option>MedCare Chennai</option>
+            <option>MedCare Bangalore</option>
+            <option>City Care Hospital</option>
+
+        </select>
+
+        <label>Appointment Date</label>
+
+        <input type="date"
+               id="date">
+
+        <label>Appointment Time</label>
+
+        <select id="time">
+
+            <option>09:00 AM</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>02:00 PM</option>
+            <option>03:00 PM</option>
+            <option>04:00 PM</option>
+
+        </select>
+
+        <button onclick="bookAppointment()">
+            Confirm Appointment
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+document.getElementById("doctor").value =
+    localStorage.getItem("selectedDoctor");
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

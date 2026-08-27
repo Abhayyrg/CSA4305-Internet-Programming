@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Patient Check-in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="form-card">
+
+        <h2>?? Patient Check-in</h2>
+
+        <input type="text"
+               id="patientName"
+               placeholder="Patient Name">
+
+        <input type="text"
+               id="symptoms"
+               placeholder="Reason for Visit">
+
+        <textarea
+            id="notes"
+            placeholder="Additional Information">
+        </textarea>
+
+        <button onclick="submitCheckin()">
+            Submit Check-in
+        </button>
+
+        <p id="checkinMessage"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

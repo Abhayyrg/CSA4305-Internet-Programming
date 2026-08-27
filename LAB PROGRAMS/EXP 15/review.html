@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Doctor Review</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="form-card">
+
+        <h2>? Doctor Feedback</h2>
+
+        <input type="text"
+               id="reviewDoctor"
+               placeholder="Doctor Name">
+
+        <select id="rating">
+
+            <option value="5">?????</option>
+            <option value="4">????</option>
+            <option value="3">???</option>
+            <option value="2">??</option>
+            <option value="1">?</option>
+
+        </select>
+
+        <textarea
+            id="review"
+            placeholder="Write your review...">
+        </textarea>
+
+        <button onclick="submitReview()">
+            Submit Review
+        </button>
+
+        <p id="reviewMessage"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
