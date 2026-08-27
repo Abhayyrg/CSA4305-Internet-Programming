@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="form-card">
+
+        <h2>? Customer Feedback</h2>
+
+        <textarea
+            id="feedback"
+            placeholder="Share your experience..."
+        ></textarea>
+
+        <select id="rating">
+
+            <option>?????</option>
+            <option>????</option>
+            <option>???</option>
+            <option>??</option>
+            <option>?</option>
+
+        </select>
+
+        <button onclick="submitFeedback()">
+            Submit Feedback
+        </button>
+
+        <p id="feedbackMessage"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

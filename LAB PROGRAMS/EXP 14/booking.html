@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="form-card">
+
+        <h2>?? Book Appointment</h2>
+
+        <label>Service</label>
+
+        <input type="text"
+               id="service"
+               readonly>
+
+        <label>Stylist</label>
+
+        <select id="stylist">
+
+            <option>Priya</option>
+            <option>Anjali</option>
+            <option>Neha</option>
+
+        </select>
+
+        <label>Date</label>
+
+        <input type="date"
+               id="date">
+
+        <label>Time</label>
+
+        <select id="time">
+
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>02:00 PM</option>
+            <option>03:00 PM</option>
+            <option>04:00 PM</option>
+            <option>05:00 PM</option>
+
+        </select>
+
+        <select id="payment">
+
+            <option>Full Payment</option>
+            <option>?200 Deposit</option>
+
+        </select>
+
+        <button onclick="bookAppointment()">
+            Confirm Appointment
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+document.getElementById("service").value =
+    localStorage.getItem("selectedService");
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
