@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f7;
+    color: #333;
+}
+
+header {
+    background: #8e3157;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: #ffdce6;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+.container > input,
+.container > select {
+    width: 250px;
+}
+
+input,
+select {
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+}
+
+button {
+    border: none;
+    background: #8e3157;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #69213f;
+}
+
+.products {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 18px #0001;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+}
+
+.cake-img {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    background: #fff0f4;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.card {
+    background: white;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #0002;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    color: #8e3157;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+}
+
+.dashboard .card {
+    margin: 0;
+}
+
+.order {
+    background: #fff0f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+@media(max-width:600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .container > input,
+    .container > select {
+        width: 100%;
+    }
+}

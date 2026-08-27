@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sweet Cake Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>?? Sweet Cake</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart ??</a>
+        <a href="myorders.html">My Orders</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Delicious Cakes for Every Occasion</h1>
+    <p>Freshly baked cakes delivered to your doorstep.</p>
+</section>
+
+<div class="container">
+
+    <h2>Our Cakes</h2>
+
+    <input type="text"
+           id="search"
+           placeholder="Search cake..."
+           onkeyup="searchCake()">
+
+    <select id="category" onchange="filterCake()">
+        <option value="all">All Categories</option>
+        <option value="birthday">Birthday</option>
+        <option value="wedding">Wedding</option>
+        <option value="chocolate">Chocolate</option>
+    </select>
+
+    <div class="products">
+
+        <div class="product" data-category="birthday">
+            <div class="cake-img">??</div>
+            <h3>Birthday Cake</h3>
+            <p>Vanilla cream cake</p>
+            <h3>?700</h3>
+
+            <button onclick="addToCart('Birthday Cake',700)">
+                Add to Cart
+            </button>
+        </div>
+
+
+        <div class="product" data-category="chocolate">
+            <div class="cake-img">??</div>
+            <h3>Chocolate Cake</h3>
+            <p>Rich chocolate cake</p>
+            <h3>?900</h3>
+
+            <button onclick="addToCart('Chocolate Cake',900)">
+                Add to Cart
+            </button>
+        </div>
+
+
+        <div class="product" data-category="wedding">
+            <div class="cake-img">??</div>
+            <h3>Wedding Cake</h3>
+            <p>Special wedding cake</p>
+            <h3>?1800</h3>
+
+            <button onclick="addToCart('Wedding Cake',1800)">
+                Add to Cart
+            </button>
+        </div>
+
+
+        <div class="product" data-category="chocolate">
+            <div class="cake-img">??</div>
+            <h3>Black Forest</h3>
+            <p>Classic black forest</p>
+            <h3>?850</h3>
+
+            <button onclick="addToCart('Black Forest',850)">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
