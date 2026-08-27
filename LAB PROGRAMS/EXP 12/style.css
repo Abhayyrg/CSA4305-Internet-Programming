@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef3f8;
+    color: #222;
+}
+
+header {
+    background: #12355b;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.card,
+.ticket {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #0002;
+}
+
+.card h2,
+.ticket h2 {
+    color: #12355b;
+    margin-bottom: 20px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    background: #12355b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0b2745;
+}
+
+a {
+    color: #12355b;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.success {
+    background: #e5f7e9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.confirmed {
+    color: green;
+    font-weight: bold;
+}
+
+.ticket {
+    max-width: 600px;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 94%;
+    }
+}

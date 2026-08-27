@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Flights</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h2>?? SkyBook</h2>
+
+    <nav>
+        <a href="search.html">Search</a>
+        <a href="ticket.html">My Ticket</a>
+        <a href="cancel.html">Cancel</a>
+    </nav>
+
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Search Flights</h2>
+
+        <input type="text"
+               id="from"
+               placeholder="From">
+
+        <input type="text"
+               id="to"
+               placeholder="To">
+
+        <input type="date"
+               id="date">
+
+        <select id="flightClass">
+
+            <option>Economy</option>
+            <option>Premium Economy</option>
+            <option>Business</option>
+            <option>First Class</option>
+
+        </select>
+
+        <button onclick="searchFlight()">
+            Search Flights
+        </button>
+
+    </div>
+
+    <div id="results"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

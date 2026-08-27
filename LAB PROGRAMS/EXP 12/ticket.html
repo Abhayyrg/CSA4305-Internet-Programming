@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Ticket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="ticket">
+
+        <h2>?? E-Ticket</h2>
+
+        <hr>
+
+        <p><b>PNR:</b>
+            <span id="ticketPNR"></span>
+        </p>
+
+        <p><b>Passenger:</b>
+            <span id="ticketName"></span>
+        </p>
+
+        <p><b>Flight:</b> SkyBook Airlines</p>
+
+        <p><b>Route:</b>
+            Chennai ? Delhi
+        </p>
+
+        <p><b>Seat:</b>
+            <span id="ticketSeat"></span>
+        </p>
+
+        <p><b>Status:</b>
+            <span class="confirmed">
+                CONFIRMED
+            </span>
+        </p>
+
+        <button onclick="window.print()">
+            ?? Print Ticket
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+document.getElementById("ticketPNR").innerHTML =
+    localStorage.getItem("pnr");
+
+document.getElementById("ticketName").innerHTML =
+    localStorage.getItem("passenger");
+
+document.getElementById("ticketSeat").innerHTML =
+    localStorage.getItem("seat");
+
+</script>
+
+</body>
+</html>
