@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="form-card">
+
+        <h2>?? Checkout</h2>
+
+        <input type="text"
+               id="address"
+               placeholder="Delivery Address">
+
+        <input type="text"
+               id="city"
+               placeholder="City">
+
+        <input type="tel"
+               id="phone"
+               placeholder="Phone Number">
+
+        <select id="payment">
+
+            <option>
+                UPI
+            </option>
+
+            <option>
+                Credit Card
+            </option>
+
+            <option>
+                Cash on Delivery
+            </option>
+
+        </select>
+
+        <button onclick="placeOrder()">
+            Place Order
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
