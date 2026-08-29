@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shop - StyleHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h2>?? StyleHub</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="wishlist.html">? Wishlist</a>
+        <a href="cart.html">?? Cart</a>
+        <a href="orders.html">Orders</a>
+    </nav>
+
+</header>
+
+<div class="container">
+
+    <h1>Fashion Collection</h1>
+
+    <div class="filters">
+
+        <input type="text"
+               id="search"
+               placeholder="Search fashion..."
+               onkeyup="searchProducts()">
+
+        <select id="category"
+                onchange="filterProducts()">
+
+            <option value="all">
+                All Categories
+            </option>
+
+            <option value="men">
+                Men
+            </option>
+
+            <option value="women">
+                Women
+            </option>
+
+            <option value="footwear">
+                Footwear
+            </option>
+
+            <option value="accessory">
+                Accessories
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div class="products">
+
+
+        <div class="product"
+             data-category="men">
+
+            <div class="product-image">
+                ??
+            </div>
+
+            <h3>Classic T-Shirt</h3>
+
+            <p>Men's Casual Wear</p>
+
+            <h3>?999</h3>
+
+            <p class="available">
+                ? Available
+            </p>
+
+            <button onclick="addToCart(
+                'Classic T-Shirt',999)">
+                Add to Cart
+            </button>
+
+            <button onclick="addWishlist(
+                'Classic T-Shirt')">
+                ?
+            </button>
+
+        </div>
+
+
+        <div class="product"
+             data-category="women">
+
+            <div class="product-image">
+                ??
+            </div>
+
+            <h3>Summer Dress</h3>
+
+            <p>Women's Fashion</p>
+
+            <h3>?1,899</h3>
+
+            <p class="available">
+                ? Available
+            </p>
+
+            <button onclick="addToCart(
+                'Summer Dress',1899)">
+                Add to Cart
+            </button>
+
+            <button onclick="addWishlist(
+                'Summer Dress')">
+                ?
+            </button>
+
+        </div>
+
+
+        <div class="product"
+             data-category="footwear">
+
+            <div class="product-image">
+                ??
+            </div>
+
+            <h3>Urban Sneakers</h3>
+
+            <p>Casual Footwear</p>
+
+            <h3>?2,499</h3>
+
+            <p class="available">
+                ? Available
+            </p>
+
+            <button onclick="addToCart(
+                'Urban Sneakers',2499)">
+                Add to Cart
+            </button>
+
+            <button onclick="addWishlist(
+                'Urban Sneakers')">
+                ?
+            </button>
+
+        </div>
+
+
+        <div class="product"
+             data-category="accessory">
+
+            <div class="product-image">
+                ??
+            </div>
+
+            <h3>Classic Handbag</h3>
+
+            <p>Women's Accessories</p>
+
+            <h3>?1,499</h3>
+
+            <p class="available">
+                ? Available
+            </p>
+
+            <button onclick="addToCart(
+                'Classic Handbag',1499)">
+                Add to Cart
+            </button>
+
+            <button onclick="addWishlist(
+                'Classic Handbag')">
+                ?
+            </button>
+
+        </div>
+
+
+        <div class="product"
+             data-category="men">
+
+            <div class="product-image">
+                ??
+            </div>
+
+            <h3>Formal Shirt</h3>
+
+            <p>Men's Formal Wear</p>
+
+            <h3>?1,299</h3>
+
+            <p class="available">
+                ? Available
+            </p>
+
+            <button onclick="addToCart(
+                'Formal Shirt',1299)">
+                Add to Cart
+            </button>
+
+            <button onclick="addWishlist(
+                'Formal Shirt')">
+                ?
+            </button>
+
+        </div>
+
+
+        <div class="product"
+             data-category="women">
+
+            <div class="product-image">
+                ??
+            </div>
+
+            <h3>Winter Jacket</h3>
+
+            <p>Women's Winter Wear</p>
+
+            <h3>?2,999</h3>
+
+            <p class="available">
+                ? Available
+            </p>
+
+            <button onclick="addToCart(
+                'Winter Jacket',2999)">
+                Add to Cart
+            </button>
+
+            <button onclick="addWishlist(
+                'Winter Jacket')">
+                ?
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
