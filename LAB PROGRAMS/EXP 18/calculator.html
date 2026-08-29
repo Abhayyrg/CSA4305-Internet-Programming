@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="form-card">
+
+        <h2>?? Home Loan Calculator</h2>
+
+        <input
+            type="number"
+            id="loan"
+            placeholder="Loan Amount">
+
+        <input
+            type="number"
+            id="interest"
+            placeholder="Interest Rate (%)">
+
+        <input
+            type="number"
+            id="years"
+            placeholder="Loan Period (Years)">
+
+        <button onclick="calculateEMI()">
+            Calculate EMI
+        </button>
+
+        <h2 id="emiResult"></h2>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

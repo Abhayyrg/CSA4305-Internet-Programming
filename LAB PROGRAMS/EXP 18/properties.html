@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Properties - HomeFinder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h2>?? HomeFinder</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="saved.html">? Saved</a>
+        <a href="agents.html">Agents</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+
+</header>
+
+<div class="container">
+
+    <h1>Find Properties</h1>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="propertySearch"
+            placeholder="Search location..."
+            onkeyup="filterProperties()">
+
+        <select
+            id="typeFilter"
+            onchange="filterProperties()">
+
+            <option value="all">
+                All
+            </option>
+
+            <option value="house">
+                House
+            </option>
+
+            <option value="apartment">
+                Apartment
+            </option>
+
+            <option value="land">
+                Land
+            </option>
+
+            <option value="commercial">
+                Commercial
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div class="properties">
+
+
+        <div
+            class="property-card"
+            data-location="chennai"
+            data-type="house">
+
+            <div class="property-image">
+                ??
+            </div>
+
+            <h3>
+                Family House
+            </h3>
+
+            <p>
+                ?? Chennai
+            </p>
+
+            <h3>
+                ?75 Lakhs
+            </h3>
+
+            <p>
+                3 BHK • 2 Bath
+            </p>
+
+            <button
+                onclick="saveProperty(
+                'Family House')">
+
+                ? Save
+
+            </button>
+
+            <a href="property.html">
+                <button>
+                    Details
+                </button>
+            </a>
+
+        </div>
+
+
+        <div
+            class="property-card"
+            data-location="bangalore"
+            data-type="apartment">
+
+            <div class="property-image">
+                ??
+            </div>
+
+            <h3>
+                Luxury Apartment
+            </h3>
+
+            <p>
+                ?? Bangalore
+            </p>
+
+            <h3>
+                ?95 Lakhs
+            </h3>
+
+            <p>
+                3 BHK • Parking
+            </p>
+
+            <button
+                onclick="saveProperty(
+                'Luxury Apartment')">
+
+                ? Save
+
+            </button>
+
+            <a href="property.html">
+                <button>
+                    Details
+                </button>
+            </a>
+
+        </div>
+
+
+        <div
+            class="property-card"
+            data-location="hyderabad"
+            data-type="land">
+
+            <div class="property-image">
+                ??
+            </div>
+
+            <h3>
+                Residential Land
+            </h3>
+
+            <p>
+                ?? Hyderabad
+            </p>
+
+            <h3>
+                ?42 Lakhs
+            </h3>
+
+            <p>
+                2400 Sq.Ft
+            </p>
+
+            <button
+                onclick="saveProperty(
+                'Residential Land')">
+
+                ? Save
+
+            </button>
+
+            <a href="property.html">
+                <button>
+                    Details
+                </button>
+            </a>
+
+        </div>
+
+
+        <div
+            class="property-card"
+            data-location="chennai"
+            data-type="commercial">
+
+            <div class="property-image">
+                ??
+            </div>
+
+            <h3>
+                Commercial Space
+            </h3>
+
+            <p>
+                ?? Chennai
+            </p>
+
+            <h3>
+                ?1.2 Crore
+            </h3>
+
+            <p>
+                1800 Sq.Ft
+            </p>
+
+            <button
+                onclick="saveProperty(
+                'Commercial Space')">
+
+                ? Save
+
+            </button>
+
+            <a href="property.html">
+                <button>
+                    Details
+                </button>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
