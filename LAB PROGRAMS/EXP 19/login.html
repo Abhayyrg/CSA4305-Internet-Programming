@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>InsureEasy Login</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="form-card">
+
+        <h1>??? InsureEasy</h1>
+
+        <h2>Login</h2>
+
+        <select id="loginRole">
+
+            <option value="user">
+                User
+            </option>
+
+            <option value="agent">
+                Agent
+            </option>
+
+            <option value="admin">
+                Admin
+            </option>
+
+        </select>
+
+
+        <input
+            type="text"
+            id="loginUsername"
+            placeholder="Username">
+
+
+        <input
+            type="password"
+            id="loginPassword"
+            placeholder="Password">
+
+
+        <button onclick="login()">
+            Login
+        </button>
+
+
+        <p id="loginMessage"></p>
+
+
+        <p>
+            New Agent?
+            <a href="register.html">
+                Register
+            </a>
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

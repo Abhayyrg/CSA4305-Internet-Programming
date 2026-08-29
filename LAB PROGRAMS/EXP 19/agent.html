@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Agent Dashboard</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h2>??? InsureEasy</h2>
+
+    <nav>
+
+        <a href="agent.html">
+            Dashboard
+        </a>
+
+        <a href="index.html">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+<div class="container">
+
+    <h1>
+        Agent Dashboard
+    </h1>
+
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <h2>??</h2>
+
+            <h3>
+                Create Customer
+            </h3>
+
+            <button
+                onclick="createCustomer()">
+
+                Add Customer
+
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>??</h2>
+
+            <h3>
+                Customer Details
+            </h3>
+
+            <button
+                onclick="viewCustomers()">
+
+                View Customers
+
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>??</h2>
+
+            <h3>
+                Manage Policies
+            </h3>
+
+            <a href="policies.html">
+
+                <button>
+                    Manage
+                </button>
+
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>??</h2>
+
+            <h3>
+                Send SMS Alert
+            </h3>
+
+            <button
+                onclick="sendSMS()">
+
+                Send Alert
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>
+            Customer List
+        </h2>
+
+        <div id="customerList">
+
+            No customers added.
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

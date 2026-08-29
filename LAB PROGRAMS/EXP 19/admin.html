@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h2>??? InsureEasy Admin</h2>
+
+    <nav>
+
+        <a href="admin.html">
+            Dashboard
+        </a>
+
+        <a href="index.html">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+<div class="container">
+
+    <h1>
+        Admin Dashboard
+    </h1>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h2>?????</h2>
+
+            <h3>
+                Agent Applications
+            </h3>
+
+            <p>
+                Review registered agents.
+            </p>
+
+            <button
+                onclick="showAgents()">
+
+                View Agents
+
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>?</h2>
+
+            <h3>
+                Approve Agents
+            </h3>
+
+            <button
+                onclick="approveAgent()">
+
+                Approve
+
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>??</h2>
+
+            <h3>
+                Reports
+            </h3>
+
+            <button
+                onclick="generateReport()">
+
+                Generate Report
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>
+            Registered Agents
+        </h2>
+
+        <div id="agentList">
+
+            No pending agents.
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
