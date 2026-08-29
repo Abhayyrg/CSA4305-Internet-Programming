@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Shop - BlossomGifts</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h2>?? BlossomGifts</h2>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="products.html">Shop</a>
+
+        <a href="cart.html">
+            Cart ??
+        </a>
+
+        <a href="orders.html">
+            Orders
+        </a>
+
+    </nav>
+
+</header>
+
+
+<div class="container">
+
+    <h1>Our Products</h1>
+
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search flowers or gifts..."
+            onkeyup="searchProducts()">
+
+        <select
+            id="category"
+            onchange="filterProducts()">
+
+            <option value="all">
+                All Categories
+            </option>
+
+            <option value="flowers">
+                Flowers
+            </option>
+
+            <option value="gifts">
+                Gifts
+            </option>
+
+            <option value="baskets">
+                Gift Baskets
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <div class="card product"
+             data-category="flowers">
+
+            <div class="product-image">
+                ??
+            </div>
+
+            <h3>Red Rose Bouquet</h3>
+
+            <p>
+                Fresh red roses for special occasions.
+            </p>
+
+            <h3>?799</h3>
+
+            <p>Available: 12</p>
+
+            <button onclick="addToCart(
+                'Red Rose Bouquet',799)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="card product"
+             data-category="flowers">
+
+            <div class="product-image">
+                ??
+            </div>
+
+            <h3>Spring Tulip Bouquet</h3>
+
+            <p>
+                Colorful tulips for your loved ones.
+            </p>
+
+            <h3>?999</h3>
+
+            <p>Available: 8</p>
+
+            <button onclick="addToCart(
+                'Spring Tulip Bouquet',999)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="card product"
+             data-category="gifts">
+
+            <div class="product-image">
+                ??
+            </div>
+
+            <h3>Birthday Gift Box</h3>
+
+            <p>
+                A beautiful gift box for birthdays.
+            </p>
+
+            <h3>?1,299</h3>
+
+            <p>Available: 10</p>
+
+            <button onclick="addToCart(
+                'Birthday Gift Box',1299)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="card product"
+             data-category="baskets">
+
+            <div class="product-image">
+                ??
+            </div>
+
+            <h3>Chocolate Basket</h3>
+
+            <p>
+                Premium chocolates beautifully packed.
+            </p>
+
+            <h3>?1,499</h3>
+
+            <p>Available: 6</p>
+
+            <button onclick="addToCart(
+                'Chocolate Basket',1499)">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h2>?? BlossomGifts Admin</h2>
+
+    <nav>
+
+        <a href="index.html">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+<div class="container">
+
+    <h1>Admin Dashboard</h1>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h2>??</h2>
+
+            <h3>Customers</h3>
+
+            <button onclick="viewCustomers()">
+                View Customers
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>??</h2>
+
+            <h3>Inventory</h3>
+
+            <button onclick="viewInventory()">
+                View Inventory
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>??</h2>
+
+            <h3>Order Summary</h3>
+
+            <button onclick="viewOrders()">
+                View Orders
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <div id="adminOutput">
+            Select an option above.
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
