@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<studentSkillProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <studentInfo>
+        <registerNo>21BCE1001</registerNo>
+        <fullName>Harsha</fullName>
+        <department>Computer Science and Engineering</department>
+        <academicYear>2026-2027</academicYear>
+        <targetRole>Full-Stack Enterprise Developer</targetRole>
+        <overallGapIndex>24.0%</overallGapIndex>
+        <readinessIndex>76.0%</readinessIndex>
+    </studentInfo>
+
+    <competencyList>
+        <skill>
+            <id>SK-101</id>
+            <category>Web &amp; MVC Architecture</category>
+            <name>Java Servlets &amp; JSP</name>
+            <currentLevel>4</currentLevel>
+            <benchmarkLevel>4</benchmarkLevel>
+            <verifiedStatus>Approved by Faculty</verifiedStatus>
+        </skill>
+        <skill>
+            <id>SK-102</id>
+            <category>Data Interchange</category>
+            <name>XML &amp; XSLT Transformation</name>
+            <currentLevel>3</currentLevel>
+            <benchmarkLevel>4</benchmarkLevel>
+            <verifiedStatus>Diagnostic Verified</verifiedStatus>
+        </skill>
+        <skill>
+            <id>SK-103</id>
+            <category>Front-End UI/UX</category>
+            <name>CSS Grid / UI Layouts</name>
+            <currentLevel>5</currentLevel>
+            <benchmarkLevel>5</benchmarkLevel>
+            <verifiedStatus>Mastered &amp; Portfolio Verified</verifiedStatus>
+        </skill>
+        <skill>
+            <id>SK-104</id>
+            <category>Client-Side Scripting</category>
+            <name>JavaScript &amp; DOM Engine</name>
+            <currentLevel>4</currentLevel>
+            <benchmarkLevel>4</benchmarkLevel>
+            <verifiedStatus>Project Verified</verifiedStatus>
+        </skill>
+        <skill>
+            <id>SK-105</id>
+            <category>Persistence Tier</category>
+            <name>Database Design &amp; SQL</name>
+            <currentLevel>3</currentLevel>
+            <benchmarkLevel>4</benchmarkLevel>
+            <verifiedStatus>Coursework Verified</verifiedStatus>
+        </skill>
+        <skill>
+            <id>SK-106</id>
+            <category>Cloud &amp; Infrastructure</category>
+            <name>Cloud DevOps &amp; Docker</name>
+            <currentLevel>3</currentLevel>
+            <benchmarkLevel>4</benchmarkLevel>
+            <verifiedStatus>Pending Audit</verifiedStatus>
+        </skill>
+    </competencyList>
+
+    <verifiedCredentials>
+        <credential>
+            <title>Oracle Certified Professional: Java SE 11</title>
+            <issuingAuthority>Oracle University</issuingAuthority>
+            <dateVerified>2026-08-15</dateVerified>
+            <verifiedBy>Dr. D. Sudhagar</verifiedBy>
+            <mentorRemarks>Exemplary performance. Level elevated to Level 4.</mentorRemarks>
+        </credential>
+        <credential>
+            <title>NPTEL Certification: Modern Internet Technologies</title>
+            <issuingAuthority>IIT Madras / NPTEL</issuingAuthority>
+            <dateVerified>2026-07-20</dateVerified>
+            <verifiedBy>Dr. D. Sudhagar</verifiedBy>
+            <mentorRemarks>Elite + Gold standard scored in Web programming.</mentorRemarks>
+        </credential>
+    </verifiedCredentials>
+</studentSkillProfile>

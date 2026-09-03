@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Assessment & Gap Analysis Engine | SSDMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <div class="app-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <h2>SSDMS</h2>
+                    <span>CSA4305 Web Portal</span>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                    <span>Student Dashboard</span>
+                </a>
+                <a href="assessment.html" class="nav-item active">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+                    <span>Skill Assessment</span>
+                </a>
+                <a href="evidence.html" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    <span>Evidence Upload</span>
+                </a>
+                <a href="transcript.html" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    <span>XML/XSLT Transcript</span>
+                </a>
+                <a href="mentor.html" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                    <span>Mentor Portal</span>
+                </a>
+                <a href="analytics.html" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                    <span>Institutional Analytics</span>
+                </a>
+            </nav>
+
+            <div class="user-profile-badge">
+                <div class="avatar">H</div>
+                <div class="user-meta">
+                    <strong>Harsha</strong>
+                    <small>Reg: 21BCE1001</small>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-viewport">
+            <header class="top-nav">
+                <div class="page-title">
+                    <h1>Diagnostic Skill Assessment & Real-Time Gap Analysis</h1>
+                    <p>Evaluate your technical proficiency against the Industry Standard Career Benchmark</p>
+                </div>
+                <div class="top-actions">
+                    <div class="target-role-selector">
+                        <label>Target Career Track:</label>
+                        <select id="targetCareerSelect" class="form-select">
+                            <option value="fullstack">Full-Stack Enterprise Developer</option>
+                            <option value="cloud">Cloud Native & DevOps Engineer</option>
+                            <option value="data">Data Engineer & ML Specialist</option>
+                        </select>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-split">
+                <!-- Assessment Questions Panel -->
+                <div class="panel glass-panel">
+                    <div class="panel-header">
+                        <div>
+                            <h2>Diagnostic Test: CSA4305 Web & Enterprise Frameworks</h2>
+                            <p class="panel-subtitle">Select the most accurate technical answers to recalibrate your competency score</p>
+                        </div>
+                        <span class="badge badge-accent">5 Questions</span>
+                    </div>
+
+                    <form id="assessmentQuizForm" class="quiz-form">
+                        <div class="quiz-item" data-skill="Java Servlets & JSP">
+                            <span class="quiz-qnum">Question 1 • Java Web Architecture</span>
+                            <p class="quiz-question">In Java EE MVC architecture, which implicit JSP object provides application-wide shared state across all user sessions?</p>
+                            <div class="quiz-options">
+                                <label class="option-label">
+                                    <input type="radio" name="q1" value="A">
+                                    <span><code>pageContext</code></span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="q1" value="B">
+                                    <span><code>application</code> (ServletContext)</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="q1" value="C">
+                                    <span><code>session</code> (HttpSession)</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="q1" value="D">
+                                    <span><code>config</code> (ServletConfig)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-item" data-skill="XML & XSLT Transformation">
+                            <span class="quiz-qnum">Question 2 • Data Interchange & Transformation</span>
+                            <p class="quiz-question">Which XSLT element is used to match template rules against specific XML nodes for dynamic document transformation?</p>
+                            <div class="quiz-options">
+                                <label class="option-label">
+                                    <input type="radio" name="q2" value="A">
+                                    <span><code>&lt;xsl:template match="..."&gt;</code></span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="q2" value="B">
+                                    <span><code>&lt;xsl:transform query="..."&gt;</code></span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="q2" value="C">
+                                    <span><code>&lt;xsl:parse select="..."&gt;</code></span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="q2" value="D">
+                                    <span><code>&lt;xsl:apply-filter node="..."&gt;</code></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-item" data-skill="JavaScript & DOM Engine">
+                            <span class="quiz-qnum">Question 3 • Client-Side Asynchronous Logic</span>
+                            <p class="quiz-question">How does JavaScript prevent blocking the main browser UI thread when performing asynchronous XML/JSON data fetching?</p>
+                            <div class="quiz-options">
+                                <label class="option-label">
+                                    <input type="radio" name="q3" value="A">
+                                    <span>Via multi-threaded synchronous locks</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="q3" value="B">
+                                    <span>Via the Event Loop and Asynchronous Microtask Queue (Promises/Fetch API)</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="q3" value="C">
+                                    <span>By spawning background OS threads for every DOM element</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="evaluateBtn">
+                            <span>Submit Assessment & Recalculate Gap Index</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Real-time Gap Analytics & Canvas Chart -->
+                <div class="panel glass-panel">
+                    <div class="panel-header">
+                        <div>
+                            <h2>Real-Time Skill Gap & Radar Analysis</h2>
+                            <p class="panel-subtitle">Mathematical computation of benchmark shortfall</p>
+                        </div>
+                    </div>
+
+                    <div class="gap-score-box">
+                        <div class="score-metric">
+                            <span class="lbl">Overall Gap Index ($OGI$):</span>
+                            <h3 id="gapScorePercent" class="val text-warning">28.5%</h3>
+                        </div>
+                        <div class="score-metric">
+                            <span class="lbl">Career Match Readiness:</span>
+                            <h3 id="readinessScore" class="val text-success">71.5%</h3>
+                        </div>
+                    </div>
+
+                    <div class="chart-container">
+                        <canvas id="assessmentRadar" width="380" height="280"></canvas>
+                    </div>
+
+                    <!-- Cosine Recommendation Engine Output -->
+                    <div class="recommendations-box">
+                        <div class="rec-header">
+                            <h3>Personalized Learning Plan (Cosine Similarity Engine)</h3>
+                            <span class="badge badge-accent">Top Matches</span>
+                        </div>
+                        <div id="recsContainer" class="rec-list">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/assessment.js"></script>
+</body>
+</html>
